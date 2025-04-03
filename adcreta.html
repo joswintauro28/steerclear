@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyundai Creta Advertisement</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url(' WhatsApp Image 2025-02-16 at 1.02.34 PM.jpeg'); /* Replace with the actual image URL */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+        .title {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .specifications,
+        .features {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .specifications ul,
+        .features ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .specifications li,
+        .features li {
+            margin: 10px 0;
+        }
+        .buy-btn {
+            background-color: #0022ce;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .buy-btn:hover {
+            background-color: #070053;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="color: #edf0ff;">
+        <div class="overlay"></div>
+
+        <div class="content">
+            <div class="title">
+                Hyundai Creta - The Ultimate SUV
+            </div>
+            <div>
+                <ul style="color: rgb(186, 0, 0);"></ul>
+                 <select id="car-search" style="font-size: larger;">
+                     <option value="" disabled selected>Select a car</option>
+                     <option value="tata-harrier" onclick="location.href='adharrier.html'">Tata Harrier</option>
+                     <option value="hyundai-creta" onclick="location.href='adcreta.html'">Hyundai Creta</option>
+                     <option value="kia-seltos" onclick="location.href='adseltos.html'">Kia Seltos</option>
+                     <option value="suzuki-fronx" onclick="location.href='adfronx.html'">Suzuki Fronx</option>
+                 </select>
+             </div>
+
+            <div class="specifications">
+                <h2>Specifications</h2>
+                <ul>
+                    <li><strong>Engine:</strong> 1.5L Petrol / 1.5L Diesel</li>
+                    <li><strong>Power:</strong> 115 bhp (Petrol) / 115 bhp (Diesel)</li>
+                    <li><strong>Torque:</strong> 144 Nm (Petrol) / 250 Nm (Diesel)</li>
+                    <li><strong>Transmission:</strong> 6-Speed Manual / 6-Speed Automatic</li>
+                    <li><strong>Fuel Tank Capacity:</strong> 50 Liters</li>
+                    <li><strong>Seating Capacity:</strong> 5</li>
+                    <li><strong>Dimensions:</strong> 4300 mm (L) x 1790 mm (W) x 1635 mm (H)</li>
+                </ul>
+            </div>
+
+            <div class="features">
+                <h2>Features</h2>
+                <ul>
+                    <li><strong>Electric Sunroof</strong> for an open sky experience</li>
+                    <li><strong>Wireless Charging</strong> with cooling pad</li>
+                    <li><strong>10.25-inch Touchscreen</strong> with Apple CarPlay & Android Auto</li>
+                    <li><strong>Voice Commands</strong> for hands-free control</li>
+                    <li><strong>6 Airbags</strong> for improved safety</li>
+                    <li><strong>LED Tail Lamps</strong> for a stylish rear design</li>
+                    <li><strong>360° Camera</strong> for easier parking</li>
+                </ul>
+            </div>
+
+            <button class="buy-btn" onclick="window.location.href='cretainfo.html'">V I E W - M O R E</button>
+            <button class="buy-btn" onclick="window.location.href='index.php'">H O M E</button>
+        </div>
+    </div>
+
+</body>
+</html>

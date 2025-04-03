@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suzuki Fronx Advertisement</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url('WhatsApp Image 2025-02-13 at 6.49.30 PM.jpeg'); /* Replace with the actual image URL */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+        .title {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .specifications,
+        .features {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .specifications ul,
+        .features ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .specifications li,
+        .features li {
+            margin: 10px 0;
+        }
+        .buy-btn {
+            background-color: #002ac1;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .buy-btn:hover {
+            background-color: #050048;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" style="color: rgb(255, 219, 183);">
+        
+        <div class="overlay"></div>
+
+        <div class="content">
+            <div class="title">
+                Suzuki Fronx - The Stylish Compact SUV
+            </div>
+            <div>
+                <ul style="color: rgb(186, 0, 0);"></ul>
+                 <select id="car-search" style="font-size: larger;">
+                     <option value="" disabled selected>Select a car</option>
+                     <option value="tata-harrier" onclick="location.href='adharrier.html'">Tata Harrier</option>
+                     <option value="hyundai-creta" onclick="location.href='adcreta.html'">Hyundai Creta</option>
+                     <option value="kia-seltos" onclick="location.href='adseltos.html'">Kia Seltos</option>
+                     <option value="suzuki-fronx" onclick="location.href='adfronx.html'">Suzuki Fronx</option>
+                 </select>
+             </div>
+            <div class="specifications">
+                <h2>Specifications</h2>
+                <ul>
+                    <li><strong>Engine:</strong> 1.2L Petrol / 1.5L Diesel</li>
+                    <li><strong>Power:</strong> 90 bhp (Petrol) / 115 bhp (Diesel)</li>
+                    <li><strong>Torque:</strong> 113 Nm (Petrol) / 250 Nm (Diesel)</li>
+                    <li><strong>Transmission:</strong> 5-Speed Manual / 6-Speed Automatic</li>
+                    <li><strong>Fuel Tank Capacity:</strong> 45 Liters</li>
+                    <li><strong>Seating Capacity:</strong> 5</li>
+                    <li><strong>Dimensions:</strong> 3995 mm (L) x 1770 mm (W) x 1550 mm (H)</li>
+                </ul>
+            </div>
+
+            <div class="features">
+                <h2>Features</h2>
+                <ul>
+                    <li><strong>LED Projector Headlamps</strong> for enhanced lighting</li>
+                    <li><strong>SmartPlay Studio 7-inch Touchscreen</strong> with Android Auto & Apple CarPlay</li>
+                    <li><strong>Panoramic Sunroof</strong> for a premium feel</li>
+                    <li><strong>Rear Parking Sensors</strong> for easy parking</li>
+                    <li><strong>Dual Front Airbags</strong> for safety</li>
+                    <li><strong>Apple CarPlay & Android Auto</strong> for seamless connectivity</li>
+                    <li><strong>Panoramic Sunroof</strong> for a premium feel</li>
+                </ul>
+            </div>
+
+            <button class="buy-btn" onclick="window.location.href='fronxinfo.html'">V I E W - M O R E</button>
+            <button class="buy-btn" onclick="window.location.href='index.php'">H O M E</button>
+        </div>
+    </div>
+
+</body>
+</html>

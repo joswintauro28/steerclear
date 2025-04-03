@@ -1,0 +1,42 @@
+<html>
+    <style>
+         body {
+            position: relative;
+            overflow: hidden;
+            color: white;
+            text-align: center;
+        }
+        /* Background Video */
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+    <body style="background-image:url('assets/Story_images/storyNexon.jpg');
+    background-size: cover;
+    background-position: inherit;" >
+        <button  onclick="location.href='checkout.php'">B A C K</button>
+        
+        
+        
+            <h1 style="font: size 200px;">I N V O I C E - P A G E </h1><br>
+            <ul style="color: rgb(255, 255, 255); font-size: x-large;">see invoice details here</ul><br>
+           <br> <div><select id="car-search">
+                <option value=" disabled selected" style="font-size: xx-large;">View invoice</option>
+                <option value="tata-harrier" onclick="location.href='billh1.html'">Tata Harrier</option>
+                <option value="hyundai-creta" onclick="location.href='billc1.html'">Hyundai Creta</option>
+                <option value="kia-seltos" onclick="location.href='bills1.html'">Kia Seltos</option>
+                <option value="suzuki-fronx" onclick="location.href='billf1.html'">Suzuki Fronx</option>
+            </select> </div> <br>
+     
+    </body>
+</html>

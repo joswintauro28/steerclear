@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Advertisements - Steer Clear</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            position: relative;
+            overflow: hidden;
+            color: white;
+            text-align: center;
+        }
+        /* Background Video */
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        /* Content Overlay */
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            min-height: 100vh;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .ad-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .ad-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .ad-card:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        h2 {
+            margin: 10px 0;
+        }
+        p {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        .specs {
+            margin-top: 10px;
+            font-size: 12px;
+            text-align: left;
+            opacity: 0.9;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            background: #ff4d4d;
+            color: white;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="window.location.href='index.php'">H O M E</button>
+    
+
+    <!-- Background Video -->
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src=" carss.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <!-- Advertisement Content -->
+    <div class="content">
+        <h1>Steer Clear - Drive the Future</h1>
+        <div class="ad-container">
+
+            <!-- Harrier Ad -->
+            <div class="ad-card">
+                <img src="harrier.jpg" alt="Tata Harrier">
+                <h2>Tata Harrier</h2>
+                <p>The bold, muscular SUV built for adventure.</p>
+                <div class="specs">
+                    <ul>
+                        <li>Engine: 2.0L Turbo Diesel</li>
+                        <li>Power: 170 HP</li>
+                        <li>Transmission: 6-Speed Automatic</li>
+                        <li>Safety: 6 Airbags, ABS, ESP</li>
+                    </ul>
+                </div>
+                <button onclick="window.location.href='adharrier.html'">View More</button>
+            </div>
+
+            <!-- Creta Ad -->
+            <div class="ad-card">
+                <img src="creta.jpg" alt="Hyundai Creta">
+                <h2>Hyundai Creta</h2>
+                <p>A compact SUV with premium features.</p>
+                <div class="specs">
+                    <ul>
+                        <li>Engine: 1.5L Petrol/Diesel</li>
+                        <li>Power: 115 HP</li>
+                        <li>Transmission: 6-Speed Auto/Manual</li>
+                        <li>Safety: 6 Airbags, Hill Assist</li>
+                    </ul>
+                </div>
+                <button onclick="window.location.href='adcreta.html'">View More</button>
+            </div>
+
+            <!-- Seltos Ad -->
+            <div class="ad-card">
+                <img src="seltos.jpg" alt="Kia Seltos">
+                <h2>Kia Seltos</h2>
+                <p>The perfect mix of power and technology.</p>
+                <div class="specs">
+                    <ul>
+                        <li>Engine: 1.4L Turbo Petrol</li>
+                        <li>Power: 140 HP</li>
+                        <li>Transmission: 7-Speed DCT</li>
+                        <li>Safety: Blind Spot Monitor, 6 Airbags</li>
+                    </ul>
+                </div>
+                <button onclick="window.location.href='adseltos.html'">View More</button>
+            </div>
+
+            <!-- Fronx Ad -->
+            <div class="ad-card">
+                <img src="fronx.jpg" alt="Suzuki Fronx">
+                <h2>Suzuki Fronx</h2>
+                <p>A stylish sub-compact crossover for city life.</p>
+                <div class="specs">
+                    <ul>
+                        <li>Engine: 1.2L Petrol</li>
+                        <li>Power: 89 HP</li>
+                        <li>Transmission: 5-Speed Auto/Manual</li>
+                        <li>Safety: ABS, EBD, Dual Airbags</li>
+                    </ul>
+                </div>
+                <button onclick="window.location.href='adfronx.html'">View More</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

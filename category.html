@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Selection Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .checkbox-group {
+            margin-bottom: 20px;
+        }
+
+        .checkbox-group input {
+            margin-right: 10px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 15px;
+        }
+
+        .reset-btn {
+            background-color: #f44336;
+            color: white;
+            border-radius: 15px;
+        }
+
+        .button-container button:hover {
+            opacity: 0.9;
+        }
+
+        .home-btn{
+            background-color: #000000;
+            color: white;
+            border-radius: 15px;
+        }
+
+    </style>
+</head>
+<body style="background-image:url('WhatsApp Image 2025-02-16 at 11.22.33 AM.jpeg');
+background-size: cover;
+background-position: center;">
+
+    <div class="container">
+        <h2>Select Your Car</h2>
+        <form action="category.php" method="POST">
+
+            <!-- Car Category Selection -->
+            <label for="carCategory">Select Car Category:</label>
+            <select id="carCategory" name="carCategory" onchange="updateCarOptions()" required>
+                <option value="">--Select a Category--</option>
+                <option value="suv">SUV</option>
+                <option value="hatchback">Hatchback</option>
+            </select>
+
+            <!-- Car Selection -->
+            <div id="carOptions" class="checkbox-group">
+                <!-- Options will be updated based on the category selected -->
+            </div>
+
+            <!-- Fuel Type Selection -->
+            <label for="fuelType">Select Fuel Type:</label>
+            <select id="fuelType" name="fuelType" required>
+                <option value="">--Select Fuel Type--</option>
+                <option value="petrol">Petrol</option>
+                <option value="diesel">Diesel</option>
+                <option value="electric">Electric</option>
+                <option value="hybrid">Hybrid</option>
+            </select>
+
+            <!-- Budget -->
+            <label for="budget">Enter Your Budget (in INR):</label>
+            <input type="number" id="budget" name="budget" placeholder="Enter your budget" required>
+
+            <div class="button-container">
+                <button type="submit" class="submit-btn">Submit</button>
+                <button type="reset" class="reset-btn">Reset</button>
+                <button type="button" class="home-btn" onclick="location.href='index.php'">HOME</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function updateCarOptions() {
+            const carCategory = document.getElementById('carCategory').value;
+            const carOptionsDiv = document.getElementById('carOptions');
+
+            // Clear existing options
+            carOptionsDiv.innerHTML = '';
+
+            if (carCategory === 'suv') {
+                carOptionsDiv.innerHTML = `
+                    <label><strong>Select SUV:</strong></label>
+                    <input type="checkbox" id="harrier" name="car[]" value="Harrier">
+                    <label for="harrier">Harrier</label><br>
+                    <input type="checkbox" id="seltos" name="car[]" value="Seltos">
+                    <label for="seltos">Seltos</label><br>
+                `;
+            } else if (carCategory === 'hatchback') {
+                carOptionsDiv.innerHTML = `
+                    <label><strong>Select Hatchback:</strong></label>
+                    <input type="checkbox" id="creta" name="car[]" value="Creta">
+                    <label for="creta">Creta</label><br>
+                    <input type="checkbox" id="fronx" name="car[]" value="Fronx">
+                    <label for="fronx">Fronx</label><br>
+                `;
+            }
+        }
+    </script>
+
+</body>
+</html>

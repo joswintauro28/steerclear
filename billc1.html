@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice | Hyundai Creta Purchase</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background: #00424fb6; padding: 20px; }
+        .invoice-container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+        .header { text-align: center; padding-bottom: 20px; border-bottom: 2px solid #ddd; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        table, th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        .total-section { text-align: right; margin-top: 20px; font-size: 18px; font-weight: bold; }
+        .signatures { display: flex; justify-content: space-between; margin-top: 40px; }
+        .signature-box { width: 45%; text-align: center; padding-top: 30px; border-top: 2px solid black; }
+        .btn-print { display: block; margin: 20px auto; padding: 10px 20px; background: #007bff; color: white; border: none; cursor: pointer; font-size: 16px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+    <div class="invoice-container">
+        <div class="header">
+            <h1>Hyundai Creta - Purchase Invoice</h1>
+            <p><strong>Date:</strong> March 20, 2025</p>
+        </div>
+
+        <div class="invoice-details">
+            <h3>Seller: STEER CLEAR</h3>
+            <p>Location: MANGLORE, KARNATAKA</p>
+            <p>Contact: +91 7996023299</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr><th>Description</th><th>Amount (₹)</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Base Price of Hyundai Creta (2021 Model)</td><td>₹14,25,000</td></tr>
+                <tr><td>RTO Charges</td><td>₹50,000</td></tr>
+                <tr><td>Road Tax</td><td>₹75,000</td></tr>
+                <tr><td>Convenience Fee</td><td>₹5,000</td></tr>
+                <tr><td>1-Year Extended Warranty</td><td>₹15,000</td></tr>
+                <tr><td>Annual Service Package</td><td>₹10,500</td></tr>
+                <tr><td>Foam Wash & Interior Cleaning</td><td>₹4,000</td></tr>
+                <tr><td>Car Polishing & Waxing</td><td>₹5,500</td></tr>
+                <tr><td>Welcome Kit</td><td>₹8,000</td></tr>
+                <tr><td>Central GST (CGST) @9%</td><td>₹1,46,775</td></tr>
+                <tr><td>State GST (SGST) @9%</td><td>₹1,46,775</td></tr>
+                <tr><td><strong>Total Amount (Including GST)</strong></td><td><strong>₹18,91,550</strong></td></tr>
+            </tbody>
+        </table>
+
+        <div class="total-section">
+            <p><strong>Grand Total: ₹18,91,550</strong></p>
+        </div>
+
+        <div class="signatures">
+            <div class="signature-box"><p><strong>Customer Signature</strong></p></div>
+            <div class="signature-box"><p><strong>Seller Signature</strong></p></div>
+        </div>
+
+        <button class="btn-print" onclick="window.print()">P R I N T - I N V O I C E</button>
+        <button class="btn-print" onclick="location.href='eee.html'">B U Y </button>
+        <button class="btn-print" onclick="location.href='invoice.html'">B A C K</button>
+    </div>
+
+</body>
+</html>
